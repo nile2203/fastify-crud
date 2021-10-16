@@ -1,0 +1,26 @@
+{
+  "name": "fastify-crud",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nile2203/fastify-crud.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nile2203/fastify-crud/issues"
+  },
+  "homepage": "https://github.com/nile2203/fastify-crud#readme",
+  "devDependencies": {
+    "fastify": "^3.22.0"
+  },
+  "dependencies": {
+    "pg": "^8.7.1"
+  }
+}
