@@ -1,6 +1,8 @@
 const routes = async (fastify, options) => {
+    const client = fastify.db.client;
     fastify.get('/', async (request, response) => {
-        response.send('Hello world');
+        const { rows } = await client.query("select * from todos");
+        response.send({ rows });
     });
 }
 
