@@ -1,14 +1,11 @@
 const fastify = require('fastify')({
     logger: true
 });
-
+const db = require('./db-index');
 const PORT = 8081;
 
+fastify.register(db);
 fastify.register(require('./todo/routes'));
-
-fastify.get('/', (request, response) => {
-    response.send('Hello world');
-});
 
 const startServer = () => {
     fastify.listen(PORT).then(() => {

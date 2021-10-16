@@ -18,7 +18,8 @@
   },
   "homepage": "https://github.com/nile2203/fastify-crud#readme",
   "devDependencies": {
-    "fastify": "^3.22.0"
+    "fastify": "^3.22.0",
+    "fastify-plugin": "^3.0.0"
   },
   "dependencies": {
     "pg": "^8.7.1"
